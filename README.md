@@ -1,45 +1,36 @@
 # langchain-litellm
 
-This package contains the LangChain integration with Litellm
+This package contains the [LangChain](https://github.com/langchain-ai/langchain) integration with [LiteLLM](https://github.com/BerriAI/litellm)
 
 ## Installation
 
 ```bash
-pip install -U langchain-litellm
+pip install -qU langchain-litellm
 ```
-
-And you should configure credentials by setting the following environment variables:
-
-* TODO: fill this out
 
 ## Chat Models
 
-`ChatLitellm` class exposes chat models from Litellm.
+`ChatLiteLLM` class exposes chat models from [LiteLLM](https://github.com/BerriAI/litellm).
 
 ```python
-from langchain_litellm import ChatLitellm
-
-llm = ChatLitellm()
-llm.invoke("Sing a ballad of LangChain.")
+from langchain_litellm.chat_models import ChatLiteLLM
+from langchain_core.messages import HumanMessage
+messages = [
+    HumanMessage(
+        content="Translate this sentence from English to French. I love programming."
+    )
+]
+chat(messages)
 ```
 
-## Embeddings
-
-`LitellmEmbeddings` class exposes embeddings from Litellm.
-
+## `ChatLiteLLM` also supports async and streaming functionality:
 ```python
-from langchain_litellm import LitellmEmbeddings
-
-embeddings = LitellmEmbeddings()
-embeddings.embed_query("What is the meaning of life?")
-```
-
-## LLMs
-`LitellmLLM` class exposes LLMs from Litellm.
-
-```python
-from langchain_litellm import LitellmLLM
-
-llm = LitellmLLM()
-llm.invoke("The meaning of life is")
+from langchain_core.callbacks import CallbackManager, StreamingStdOutCallbackHandler
+await chat.agenerate([messages])
+chat = ChatLiteLLM(
+    streaming=True,
+    verbose=True,
+    callback_manager=CallbackManager([StreamingStdOutCallbackHandler()]),
+)
+chat(messages)
 ```

@@ -1,6 +1,6 @@
 from importlib import metadata
 
-from langchain_litellm.chat_models import ChatLitellm
+from langchain_litellm.chat_models import ChatLiteLLM
 
 
 try:
@@ -11,6 +11,6 @@ except metadata.PackageNotFoundError:
 del metadata  # optional, avoids polluting the results of dir(__package__)
 
 __all__ = [
-    "ChatLitellm",
+    "ChatLiteLLM",
     "__version__",
 ]
