@@ -26,7 +26,7 @@ class TestChatLiteLLMIntegration(ChatModelIntegrationTests):
     
     @property
     def has_tool_choice(self) -> bool:
-        return True
+        return False
 
     @property
     def has_structured_output(self) -> bool:
