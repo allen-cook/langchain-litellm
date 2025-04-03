@@ -18,7 +18,7 @@ This notebook covers how to get started with using Langchain + the LiteLLM I/O l
 
 | Class | Package | Local | Serializable | JS support| Package downloads | Package latest |
 | :---  | :--- | :---: | :---: |  :---: | :---: | :---: |
-| [ChatLitellm](https://python.langchain.com/docs/integrations/chat/litellm/) | [langchain-litellm](https://python.langchain.com/api_reference/litellm/index.html)| ❌ | ❌ | ❌ | ![PyPI - Downloads](https://img.shields.io/pypi/dm/langchain-litellm?style=flat-square&label=%20) | ![PyPI - Version](https://img.shields.io/pypi/v/langchain-litellm?style=flat-square&label=%20) |
+| [ChatLitellm](https://python.langchain.com/docs/integrations/chat/litellm/) | [langchain-litellm](https://pypi.org/project/langchain-litellm/)| ❌ | ❌ | ❌ | ![PyPI - Downloads](https://img.shields.io/pypi/dm/langchain-litellm?style=flat-square&label=%20) | ![PyPI - Version](https://img.shields.io/pypi/v/langchain-litellm?style=flat-square&label=%20) |
 
 ### Model features
 | [Tool calling](https://python.langchain.com/docs/how_to/tool_calling/) | [Structured output](https://python.langchain.com/docs/how_to/structured_output/) | JSON mode | Image input | Audio input | Video input | [Token-level streaming](https://python.langchain.com/docs/integrations/chat/litellm/#chatlitellm-also-supports-async-and-streaming-functionality) | [Native async](https://python.langchain.com/docs/integrations/chat/litellm/#chatlitellm-also-supports-async-and-streaming-functionality) | [Token usage](https://python.langchain.com/docs/how_to/chat_token_usage_tracking/) | [Logprobs](https://python.langchain.com/docs/how_to/logprobs/) |
@@ -27,6 +27,13 @@ This notebook covers how to get started with using Langchain + the LiteLLM I/O l
 
 ### Setup
 To access ChatLiteLLM models you'll need to create an OpenAI, Anthropic, Azure, Replicate, OpenRouter, Hugging Face, Together AI or Cohere account, get an API key, and export it as an environment variable.
+```python
+## set ENV variables
+import os
+os.environ["OPENAI_API_KEY"] = "your-openai-key"
+os.environ["ANTHROPIC_API_KEY"] = "your-anthropic-key"
+```
+
 ## Chat Models
 
 `ChatLiteLLM` class exposes chat models from [LiteLLM](https://github.com/BerriAI/litellm).
@@ -56,3 +63,6 @@ chat = ChatLiteLLM(
 response = chat(messages)
 print(response)
 ```
+
+## API reference
+For detailed documentation of all ChatLiteLLM features and configurations head to the API reference: https://github.com/Akshay-Dongare/langchain-litellm
