@@ -1,6 +1,6 @@
 from importlib import metadata
 
-from langchain_litellm.chat_models import ChatLiteLLM
+from .chat_models import ChatLiteLLM
 
 try:
     __version__ = metadata.version(__package__)
