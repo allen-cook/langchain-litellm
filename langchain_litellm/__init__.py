@@ -2,7 +2,6 @@ from importlib import metadata
 
 from langchain_litellm.chat_models import ChatLiteLLM
 
-
 try:
     __version__ = metadata.version(__package__)
 except metadata.PackageNotFoundError:
