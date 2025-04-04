@@ -1,4 +1,4 @@
-name: release new version of pypi package  
+name: pypi-release
 
 on:
   release:
