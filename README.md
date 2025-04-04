@@ -1,6 +1,6 @@
-# LiteLLM
+# [langchain-litellm](https://pypi.org/project/langchain-litellm/)
 
->[LiteLLM](https://github.com/BerriAI/litellm) is a library that simplifies calling Anthropic, Azure, Huggingface, Replicate, etc.
+This package contains the [LangChain](https://github.com/langchain-ai/langchain) integration with LiteLLM. [LiteLLM](https://github.com/BerriAI/litellm) is a library that simplifies calling Anthropic, Azure, Huggingface, Replicate, etc.
 
 ## Installation and setup
 
@@ -13,5 +13,6 @@ pip install langchain-litellm
 from langchain_litellm.chat_models import ChatLiteLLM
 ```
 See a [usage example](docs/litellm.ipynb).
+
 ## API reference
 For detailed documentation of all `ChatLiteLLM` features and configurations head to the API reference: https://github.com/Akshay-Dongare/langchain-litellm
