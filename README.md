@@ -12,7 +12,4 @@ pip install langchain-litellm
 ```python
 from langchain_litellm.chat_models import ChatLiteLLM
 ```
-See a [usage example](docs/litellm.ipynb).
-
-## API reference
-For detailed documentation of all `ChatLiteLLM` features and configurations head to the API reference: https://github.com/Akshay-Dongare/langchain-litellm
+See a [usage example](docs/litellm.ipynb)
