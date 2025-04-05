@@ -19,6 +19,6 @@ pip install langchain-litellm
 
 ## Chat Models
 ```python
-from langchain_litellm.chat_models import ChatLiteLLM
+from langchain_litellm import ChatLiteLLM
 ```
 See a [usage example](https://github.com/Akshay-Dongare/langchain-litellm/blob/main/docs/litellm.ipynb)
