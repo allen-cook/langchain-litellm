@@ -22,4 +22,8 @@ pip install langchain-litellm
 ```python
 from langchain_litellm import ChatLiteLLM
 ```
+
+```python
+from langchain_litellm import ChatLiteLLMRouter
+```
 See a [usage example](https://github.com/Akshay-Dongare/langchain-litellm/blob/main/docs/litellm.ipynb)
