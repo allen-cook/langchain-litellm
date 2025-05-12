@@ -1,4 +1,4 @@
-name: Release → Build & Publish to PyPI
+name: PyPI Release CI
 
 on:
   release:
