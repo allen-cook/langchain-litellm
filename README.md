@@ -1,18 +1,49 @@
-<!-- ─── BADGES ─────────────────────────────────────────────────────────── -->
-**📦 Package & CI**<br>
-[![PyPI Package Version](https://img.shields.io/pypi/v/langchain-litellm?label=PyPI%20package&style=flat)](https://pypi.org/project/langchain-litellm/)
-[![PyPI Downloads](https://static.pepy.tech/badge/langchain-litellm)](https://pepy.tech/projects/langchain-litellm)
-[![Release status](https://github.com/Akshay-Dongare/langchain-litellm/actions/workflows/release-publish-pypi.yml/badge.svg?branch=main&event=release)](https://github.com/Akshay-Dongare/langchain-litellm/actions/workflows/release-publish-pypi.yml)<br>
-**🔧 Tech & Project Health**  
-[![Python](https://img.shields.io/badge/Python-3670A0?style=flat&logo=python&logoColor=ffdd54)](https://www.python.org)
-[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
-![Platform](https://img.shields.io/badge/Platform-Linux%2C%20Windows%2C%20macOS-blue)
-![Github Issues](https://img.shields.io/github/issues-closed/Akshay-Dongare/langchain-litellm)
-![Github Issues](https://img.shields.io/github/issues/Akshay-Dongare/langchain-litellm)
-![Github Pull Requests](https://img.shields.io/github/issues-pr/Akshay-Dongare/langchain-litellm)
-![Github Pull Requests](https://img.shields.io/github/issues-pr-closed/Akshay-Dongare/langchain-litellm)
-<!-- ─────────────────────────────────────────────────────────────────────── -->
+<!-- START BADGE TABLE -->
+<table>
+<thead>
+<tr>
+<th align="center">📦 Distribution</th>
+<th align="center">🔧 Project</th>
+<th align="center">🚀 Activity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">
+<a href="https://pypi.org/project/langchain-litellm/">
+<img src="https://img.shields.io/pypi/v/langchain-litellm?label=PyPI%20package&style=flat" alt="PyPI Package Version">
+</a><br/>
+<a href="https://pepy.tech/projects/langchain-litellm">
+<img src="https://static.pepy.tech/badge/langchain-litellm" alt="PyPI Downloads">
+</a><br/>
+<a href="https://github.com/Akshay-Dongare/langchain-litellm/actions/workflows/pypi-release.yml">
+<img src="https://github.com/Akshay-Dongare/langchain-litellm/actions/workflows/pypi-release.yml/badge.svg?branch=main&event=release" alt="PyPI Release CI">
+</a>
+</td>
+
+<td align="center">
+<a href="https://www.python.org">
+<img src="https://img.shields.io/badge/Python-3670A0?style=flat&logo=python&logoColor=ffdd54" alt="Python">
+</a><br/>
+<a href="https://python-poetry.org/">
+<img src="https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json" alt="Poetry">
+</a><br/>
+<a href="https://opensource.org/licenses/MIT">
+<img src="https://img.shields.io/badge/License-MIT-brightgreen.svg" alt="License: MIT">
+</a><br/>
+<img src="https://img.shields.io/badge/Platform-Linux%2C%20Windows%2C%20macOS-blue" alt="Platform">
+</td>
+
+<td align="center">
+<img src="https://img.shields.io/github/issues-closed/Akshay-Dongare/langchain-litellm" alt="GitHub Issues Closed"><br/>
+<img src="https://img.shields.io/github/issues/Akshay-Dongare/langchain-litellm" alt="GitHub Issues Open"><br/>
+<img src="https://img.shields.io/github/issues-pr/Akshay-Dongare/langchain-litellm" alt="GitHub PRs Open"><br/>
+<img src="https://img.shields.io/github/issues-pr-closed/Akshay-Dongare/langchain-litellm" alt="GitHub PRs Closed">
+</td>
+</tr>
+</tbody>
+</table>
+<!-- END BADGE TABLE -->
 
 # [langchain-litellm](https://pypi.org/project/langchain-litellm/)
 
