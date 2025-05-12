@@ -1,6 +1,8 @@
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+[![Python](https://img.shields.io/badge/Python-3670A0?style=flat&logo=python&logoColor=ffdd54)](https://www.python.org)
+[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
+[![PyPI Downloads](https://static.pepy.tech/badge/langchain-litellm)](https://pepy.tech/projects/langchain-litellm)
+[![PyPI version](https://img.shields.io/pypi/v/langchain-litellm?label=PyPI%20package&style=flat)](https://pypi.org/project/langchain-litellm/)
 
-[![pypi-release](https://github.com/Akshay-Dongare/langchain-litellm/actions/workflows/pypi-release.yml/badge.svg)](https://github.com/Akshay-Dongare/langchain-litellm/actions/workflows/pypi-release.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 ![Platform](https://img.shields.io/badge/Platform-Linux%2C%20Windows%2C%20macOS-blue)
 ![Github Issues](https://img.shields.io/github/issues-closed/Akshay-Dongare/langchain-litellm)
