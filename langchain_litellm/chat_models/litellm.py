@@ -302,7 +302,7 @@ class ChatLiteLLM(BaseChatModel):
     request_timeout: Optional[Union[float, Tuple[float, float]]] = None
     temperature: Optional[float] = None
     """Run inference with this temperature. Must be in the closed
-       interval [0.0, 1.0]."""
+       interval [0.0, 2.0]."""
     model_kwargs: Dict[str, Any] = Field(default_factory=dict)
     """Holds any model parameters valid for API call not explicitly specified."""
     top_p: Optional[float] = None
@@ -414,8 +414,8 @@ class ChatLiteLLM(BaseChatModel):
         )
         values["client"] = litellm
 
-        if values["temperature"] is not None and not 0 <= values["temperature"] <= 1:
-            raise ValueError("temperature must be in the range [0.0, 1.0]")
+        if values["temperature"] is not None and not 0 <= values["temperature"] <= 2:
+            raise ValueError("temperature must be in the range [0.0, 2.0]")
 
         if values["top_p"] is not None and not 0 <= values["top_p"] <= 1:
             raise ValueError("top_p must be in the range [0.0, 1.0]")
