@@ -59,6 +59,7 @@ from langchain_core.tools import BaseTool
 from langchain_core.utils import get_from_dict_or_env, pre_init
 from langchain_core.utils.function_calling import convert_to_openai_tool
 from litellm.types.utils import Delta
+from litellm.utils import get_valid_models
 from pydantic import BaseModel, Field
 
 logger = logging.getLogger(__name__)
@@ -242,44 +243,7 @@ def _convert_message_to_dict(message: BaseMessage) -> dict:
         message_dict["name"] = message.additional_kwargs["name"]
     return message_dict
 
-
-_OPENAI_MODELS = [
-    "o1-mini",
-    "o1-preview",
-    "gpt-4o-mini",
-    "gpt-4o-mini-2024-07-18",
-    "gpt-4o",
-    "gpt-4o-2024-08-06",
-    "gpt-4o-2024-05-13",
-    "gpt-4-turbo",
-    "gpt-4-turbo-preview",
-    "gpt-4-0125-preview",
-    "gpt-4-1106-preview",
-    "gpt-3.5-turbo-1106",
-    "gpt-3.5-turbo",
-    "gpt-3.5-turbo-0301",
-    "gpt-3.5-turbo-0613",
-    "gpt-3.5-turbo-16k",
-    "gpt-3.5-turbo-16k-0613",
-    "gpt-4",
-    "gpt-4-0314",
-    "gpt-4-0613",
-    "gpt-4-32k",
-    "gpt-4-32k-0314",
-    "gpt-4-32k-0613",
-    "gpt-4.1",
-    "gpt-4.1-mini",
-    "gpt-4.1-nano",
-    "o3",
-    "o3-mini",
-    "o3-mini-high",
-    "o4-mini",
-    "o4-mini-high",
-    "o1",
-    "o1-mini",
-    "o1-pro",
-]
-
+_OPENAI_MODELS = get_valid_models(custom_llm_provider="openai")
 
 class ChatLiteLLM(BaseChatModel):
     """Chat model that uses the LiteLLM API."""
